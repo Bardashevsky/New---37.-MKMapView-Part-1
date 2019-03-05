@@ -13,6 +13,9 @@
 		4FB7E3CA222D142300EFC791 /* New___37__MKMapView_Part_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FB7E3C8222D142300EFC791 /* New___37__MKMapView_Part_1.xcdatamodeld */; };
 		4FB7E3CC222D142500EFC791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB7E3CB222D142500EFC791 /* Assets.xcassets */; };
 		4FB7E3CF222D142500EFC791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB7E3CD222D142500EFC791 /* LaunchScreen.storyboard */; };
+		4FB7E3DC222D223D00EFC791 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FB7E3DB222D223D00EFC791 /* MapKit.framework */; };
+		4FB7E3DE222D236A00EFC791 /* OBMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB7E3DD222D236A00EFC791 /* OBMapAnnotation.swift */; };
+		4FB7E3E0222D5C5200EFC791 /* MKAnnptationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB7E3DF222D5C5200EFC791 /* MKAnnptationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		4FB7E3CB222D142500EFC791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FB7E3CE222D142500EFC791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FB7E3D0222D142500EFC791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB7E3DB222D223D00EFC791 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4FB7E3DD222D236A00EFC791 /* OBMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBMapAnnotation.swift; sourceTree = "<group>"; };
+		4FB7E3DF222D5C5200EFC791 /* MKAnnptationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKAnnptationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FB7E3DC222D223D00EFC791 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,7 @@
 			children = (
 				4FB7E3C0222D142300EFC791 /* New - 37. MKMapView Part 1 */,
 				4FB7E3BF222D142300EFC791 /* Products */,
+				4FB7E3D6222D14D200EFC791 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +71,18 @@
 				4FB7E3CD222D142500EFC791 /* LaunchScreen.storyboard */,
 				4FB7E3D0222D142500EFC791 /* Info.plist */,
 				4FB7E3C8222D142300EFC791 /* New___37__MKMapView_Part_1.xcdatamodeld */,
+				4FB7E3DD222D236A00EFC791 /* OBMapAnnotation.swift */,
+				4FB7E3DF222D5C5200EFC791 /* MKAnnptationView.swift */,
 			);
 			path = "New - 37. MKMapView Part 1";
+			sourceTree = "<group>";
+		};
+		4FB7E3D6222D14D200EFC791 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FB7E3DB222D223D00EFC791 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +117,11 @@
 				TargetAttributes = {
 					4FB7E3BD222D142300EFC791 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -139,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FB7E3CA222D142300EFC791 /* New___37__MKMapView_Part_1.xcdatamodeld in Sources */,
+				4FB7E3E0222D5C5200EFC791 /* MKAnnptationView.swift in Sources */,
 				4FB7E3C4222D142300EFC791 /* ViewController.swift in Sources */,
+				4FB7E3DE222D236A00EFC791 /* OBMapAnnotation.swift in Sources */,
 				4FB7E3C2222D142300EFC791 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
